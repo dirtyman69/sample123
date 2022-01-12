@@ -1,0 +1,102 @@
+[debug] [2022-01-12T06:26:27.035Z] ----------------------------------------------------------------------
+[debug] [2022-01-12T06:26:27.037Z] Command:       /Users/canon/.nodebrew/node/v16.13.0/bin/node /Users/canon/.npm_global/bin/firebase init
+[debug] [2022-01-12T06:26:27.038Z] CLI Version:   10.0.1
+[debug] [2022-01-12T06:26:27.038Z] Platform:      darwin
+[debug] [2022-01-12T06:26:27.039Z] Node Version:  v16.13.0
+[debug] [2022-01-12T06:26:27.041Z] Time:          Wed Jan 12 2022 15:26:27 GMT+0900 (日本標準時)
+[debug] [2022-01-12T06:26:27.041Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-12T06:26:27.051Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-12T06:26:27.052Z] > authorizing via signed-in user (squall0609.kanon@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/canon/workspace/vue/sample123
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-12T06:26:55.067Z] > refreshing access token with scopes: []
+[debug] [2022-01-12T06:26:55.068Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-12T06:26:55.226Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 12 Jan 2022 06:26:55 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-12T06:26:55.228Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-01-12T06:26:55.401Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2022-01-12T06:26:55.401Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2022-01-12T06:26:55.402Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-01-12T06:26:55.511Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/Users/canon/.npm_global/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/Users/canon/.npm_global/lib/node_modules/firebase-tools/lib/apiv2.js:241:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Client.request (/Users/canon/.npm_global/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async getProjectPage (/Users/canon/.npm_global/lib/node_modules/firebase-tools/lib/management/projects.js:233:17)
+    at async getFirebaseProjectPage (/Users/canon/.npm_global/lib/node_modules/firebase-tools/lib/management/projects.js:250:23)
+    at async selectProjectInteractively (/Users/canon/.npm_global/lib/node_modules/firebase-tools/lib/management/projects.js:95:41)
+    at async Object.doSetup [as project] (/Users/canon/.npm_global/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/Users/canon/.npm_global/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2022-01-12T06:27:08.138Z] ----------------------------------------------------------------------
+[debug] [2022-01-12T06:27:08.140Z] Command:       /Users/canon/.nodebrew/node/v16.13.0/bin/node /Users/canon/.npm_global/bin/firebase init
+[debug] [2022-01-12T06:27:08.141Z] CLI Version:   10.0.1
+[debug] [2022-01-12T06:27:08.141Z] Platform:      darwin
+[debug] [2022-01-12T06:27:08.141Z] Node Version:  v16.13.0
+[debug] [2022-01-12T06:27:08.144Z] Time:          Wed Jan 12 2022 15:27:08 GMT+0900 (日本標準時)
+[debug] [2022-01-12T06:27:08.144Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-12T06:27:08.153Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-12T06:27:08.154Z] > authorizing via signed-in user (squall0609.kanon@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/canon/workspace/vue/sample123
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-01-12T06:27:35.872Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-12T06:27:35.873Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-12T06:27:36.014Z] <<< HTTP RESPONSE 400 {"date":"Wed, 12 Jan 2022 06:27:35 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-12T06:27:36.015Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"sample123","name":"sample123"}
+[debug] [2022-01-12T06:27:36.854Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 12 Jan 2022 06:27:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=717","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-12T06:27:36.854Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-01-12T06:27:36.987Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/Users/canon/.npm_global/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/Users/canon/.npm_global/lib/node_modules/firebase-tools/lib/api.js:41:35)
+    at Request.self.callback (/Users/canon/.npm_global/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (node:events:390:28)
+    at Request.emit (node:domain:475:12)
+    at Request.<anonymous> (/Users/canon/.npm_global/lib/node_modules/firebase-tools/node_modules/request/request.js:1154:10)
+    at Request.emit (node:events:390:28)
+    at Request.emit (node:domain:475:12)
+    at IncomingMessage.<anonymous> (/Users/canon/.npm_global/lib/node_modules/firebase-tools/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (node:events:509:28)
+    at IncomingMessage.emit (node:events:402:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1343:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
